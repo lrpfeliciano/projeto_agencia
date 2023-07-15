@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco</title>
+</head>
+<body>
+    <form action="" method="post">
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Nome" 
+                    required="true" />
+        </div>    
+        <div>
+            <input type="email" id="email" name="email"
+                     placeholder="E-mail"
+                     required="true" />
+        </div> 
+        <div>
+            <label for="dataNascimento">Data de Nascimento</label>
+            <input type="date" id="dataNascimento" 
+                    name="dataNascimento" />
+            <input type="datetime-local" />
+        </div>   
+        <div>
+            <label>Fumante:</label>
+            <input type="radio" id="fumante" name="fumante" />Sim 
+            <input type="radio" id="fumante" name="fumante" />Não 
+        </div>
+        <div>
+            <label>Lugares de interesse:</label>
+            <input type="checkbox" id="lugares" name="lugares" /><label>Rio de Janeiro</label>
+            <input type="checkbox" id="lugares" name="lugares"  /><LABEL>Serra Gaúcha</label>
+            <input type="checkbox" id="lugares" name="lugares"  /><Label>Jericoacoara</label>
+            <input type="checkbox" id="lugares" name="lugares"  /><label>Fernando de Noronha</label>    
+            <input type="checkbox" id="lugares" name="lugares"  /><label>Maragogi</label>    
+            <input type="checkbox" id="lugares" name="lugares"  /><label>Foz do Iguaçu</label>    
+
+        </div>
+
+        <div>
+            <label>Cidade:</label>
+            <select id="cidade" name="cidade">
+                <option>Rio de Janeiro</option>
+                <option>Duque de Caxias</option>
+                <option>Angra dos Reis</option>
+                <option>Arraial do Cabo</option>
+            </select>
+        </div>
+        <div>
+            <select multiple>
+                <option>Rio de Janeiro</option>
+                <option>Serra Gaúcha</option>
+                <option>Jericoacoara</option>
+                <option>Fernando de Noronha</option>    
+                <option>Maragogi</option>    
+                <option>Foz do Iguaçu</option>    
+    
+            </select>
+        </div>
+        <div>
+            <textarea id="mensagem" name="mensagem" 
+              placeholder="Digite sua mensagem"></textarea>
+        </div>
+        <div>
+            <input type="password" id="senha" name="senhahackeada"
+                 required="true" />
+        </div>
+        <div>
+            <input type="number" id="numeroPessoas"
+               name="numeroPessoas" placeholder="Número de pessoas" />  
+        </div>
+        <div>
+            <input type="submit" value="Enviar" />
+            <input type="reset" value="Limpar" />
+        </div>
+    </form>
+</body>
+</html>
