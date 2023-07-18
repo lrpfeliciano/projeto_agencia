@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fale Conosco</title>
+    <link href="css/estilos.css" rel="stylesheet" /> 
+
 </head>
 <body>
-    <form action="" method="post">
+
+    <form action="" method="get">
         <div>
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" placeholder="Nome" 
-                    required="true" />
+                    required="true" maxlength="10" class="campo" />
         </div>    
         <div>
             <input type="email" id="email" name="email"
                      placeholder="E-mail"
-                     required="true" />
+                     required="true" class="campo" />
         </div> 
         <div>
             <label for="dataNascimento">Data de Nascimento</label>
@@ -25,27 +28,30 @@
         </div>   
         <div>
             <label>Fumante:</label>
-            <input type="radio" id="fumante" name="fumante" />Sim 
-            <input type="radio" id="fumante" name="fumante" />Não 
+            <input type="radio" id="fumante" name="fumante" value="S" />Sim 
+            <input type="radio" id="fumante" name="fumante" value="N" />Não 
+            <input type="radio" id="fumante" name="fumante" value="D" />De vez em quando 
+
         </div>
         <div>
             <label>Lugares de interesse:</label>
-            <input type="checkbox" id="lugares" name="lugares" /><label>Rio de Janeiro</label>
-            <input type="checkbox" id="lugares" name="lugares"  /><LABEL>Serra Gaúcha</label>
-            <input type="checkbox" id="lugares" name="lugares"  /><Label>Jericoacoara</label>
-            <input type="checkbox" id="lugares" name="lugares"  /><label>Fernando de Noronha</label>    
-            <input type="checkbox" id="lugares" name="lugares"  /><label>Maragogi</label>    
-            <input type="checkbox" id="lugares" name="lugares"  /><label>Foz do Iguaçu</label>    
+            <input type="checkbox" id="lugares" name="lugares" value="Rio"/><label>Rio de Janeiro</label>
+            <input type="checkbox" id="lugares" name="lugares" value="Serra" /><LABEL>Serra Gaúcha</label>
+            <input type="checkbox" id="lugares" name="lugares" value="Jeri"  /><Label>Jericoacoara</label>
+            <input type="checkbox" id="lugares" name="lugares" value="Noronha" /><label>Fernando de Noronha</label>    
+            <input type="checkbox" id="lugares" name="lugares" value="Mara" /><label>Maragogi</label>    
+            <input type="checkbox" id="lugares" name="lugares" value="Foz" /><label>Foz do Iguaçu</label>    
 
         </div>
 
         <div>
             <label>Cidade:</label>
-            <select id="cidade" name="cidade">
-                <option>Rio de Janeiro</option>
-                <option>Duque de Caxias</option>
-                <option>Angra dos Reis</option>
-                <option>Arraial do Cabo</option>
+            <select id="cidade" name="cidade" class="campo">
+                <option></option>
+                <option value="1">Rio de Janeiro</option>
+                <option value="2">Duque de Caxias</option>
+                <option value="3">Angra dos Reis</option>
+                <option value="4">Arraial do Cabo</option>
             </select>
         </div>
         <div>
@@ -61,14 +67,14 @@
         </div>
         <div>
             <textarea id="mensagem" name="mensagem" 
-              placeholder="Digite sua mensagem"></textarea>
+              placeholder="Digite sua mensagem" class="campo"></textarea>
         </div>
         <div>
             <input type="password" id="senha" name="senhahackeada"
-                 required="true" />
+                 required="true" class="campo" />
         </div>
         <div>
-            <input type="number" id="numeroPessoas"
+            <input type="number" id="numeroPessoas" class="campo"
                name="numeroPessoas" placeholder="Número de pessoas" />  
         </div>
         <div>
