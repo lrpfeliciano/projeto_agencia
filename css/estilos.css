@@ -1,3 +1,8 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
 p {
     text-align: center;
     text-justify: auto;
@@ -10,7 +15,6 @@ h1{
     color: #165626;
     font-size: 25px;
     font-family: Geneva, Tahoma, Verdana, sans-serif;
-
 }
 
 h2{
@@ -26,10 +30,35 @@ img{
     width: 120px;
 }
 
+a {
+    font-family: tahoma, verdana, sans-serif;
+    color: #1b9e38; 
+    text-decoration: none;   
+}
+
+a:visited{
+    color: #1b9e38;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a:active{
+    color: #FF0000;
+}
+
+nav{
+    text-align: right;
+}
 /* # para "id" */
 #em_construcao{
     height: 200px;
     width: 200px;
+}
+
+#titulo{
+    color: #FF0000
 }
 
 div{
@@ -40,4 +69,39 @@ div{
 /* . para "class" */
 .campo{
     width: 500px;
+}
+
+* {
+    box-sizing: border-box;
+  }
+.coluna{
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+
+
+.cabecalho{
+    font-weight: bold;
+}
+
+div span {
+    color: #FF0000;
+}
+
+.destaque{
+    color: #ee00ff;
+}
+
+.destaque span{
+    color: #00FF00;
+    text-decoration: underline;
 }
