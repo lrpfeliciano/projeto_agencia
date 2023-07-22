@@ -13,7 +13,7 @@ p {
 
 h1{
     color: #165626;
-    font-size: 25px;
+    font-size: 20px;
     font-family: Geneva, Tahoma, Verdana, sans-serif;
 }
 
@@ -26,8 +26,8 @@ h2{
 }
 
 img{
-    height: 50px;
-    width: 120px;
+    height: 100px;
+    width: 200px;
 }
 
 a {
@@ -64,6 +64,7 @@ nav{
 div{
     margin-left: 10px;
     padding-top: 10px;
+    text-align: center;
 }
 
 /* . para "class" */
@@ -93,7 +94,7 @@ div{
     font-weight: bold;
 }
 
-div span {
+.diferente span {
     color: #FF0000;
 }
 
@@ -104,4 +105,14 @@ div span {
 .destaque span{
     color: #00FF00;
     text-decoration: underline;
+}
+
+.containter{
+    background-color: #00FF00 !important;
+}
+
+.btn-primary{
+/*    --bs-btn-bg: #00FF00 !important; */
+    background-color: #00FF00 !important;
+    border-color: #00FF00 !important; 
 }
