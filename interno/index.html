@@ -4,14 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Área Administrativa</title>
+    <link href="../css/bootstrap.css" rel="stylesheet" />
     <link href="../css/estilos.css" rel="stylesheet" /> 
 
+    <script>
+/*
+        alert("Isso é uma mensagem");
+
+        prompt("Informe algo");
+
+        confirm("Deseja fazer isso?");
+*/
+        const myModal = document.getElementById('exemplo');
+
+        //document.getElementById("nome").value="Luis";
+        //alert(document.querySelector("input [name=nome]"));
+
+        //const autorizo = document.querySelector('input[ name = "nome"]').value; 
+        //alert(autorizo); 
+        
+
+    </script>
 </head>
 <body>
-    <h1 id="titulo">Área administrativa</h1>
-    <h1>Essa página ainda não tem nada</h1>
-    <h2>Em contrução</h2>
-    <img src="../imagens/construcao.jpeg" id="em_construcao"></img>
-    <a href="../index.html">Voltar</a>
+    <div class="modal" id="exemplo">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>Em manutenção</h4>
+                </div>
+                <div class="modal-body">
+                    <p>O sistema está indisponível</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" 
+                            data-bs-dismiss="modal">Fechar</button>
+                    <button class="btn btn-danger">
+                        Excluir conta
+                    </button>        
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="cadastro">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Criar conta</h5>   
+                </div>
+                <form name="form1">
+
+                <div class="modal-body">
+                    <input type="text"  name="nome"
+                            value="1"
+                            placeholder="Nome" />
+                </div>
+                </form>
+                <form name="form2">
+                    <input type="text"  name="nome"
+                            placeholder="Nome" />
+                </form>
+                <div class="modal-footer">
+                    <input type="submit" value="Gravar" />
+                </div>
+                
+            </div>        
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 id="titulo">Área administrativa</h1>
+
+        <form name="formulario">
+            <input type="text" id="ex1" name="exemplo" />
+        </form>
+
+        <form name="formularioAux">
+            <input type="text" id="ex2" name="exemplo" />
+        </form>
+
+        <button class="btn btn-primary" data-bs-toggle="modal" 
+                data-bs-target="#exemplo">Entrar</button>
+
+        <button class="btn btn-secondary" data-bs-toggle="modal"
+                data-bs-target="#cadastro">Criar conta</button>
+
+        <a href="../index.html">Voltar</a>
+    </div>
 </body>
+    <script src="../js/bootstrap.js"></script>
+    <script>
+        var campo = document.getElementById("ex1");
+        campo.value="Luis";
+
+        document.form1.nome.value = "1";
+    </script>
 </html>
