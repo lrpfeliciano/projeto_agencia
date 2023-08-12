@@ -122,3 +122,8 @@ div{
 .col-xl-3 {
     font-size: 20px;
 }
+
+.alerta {
+    max-width: 90% !important;
+    top: 20% !important;
+}

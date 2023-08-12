@@ -15,7 +15,7 @@
 
         confirm("Deseja fazer isso?");
 */
-        const myModal = document.getElementById('exemplo');
+ //       const myModal = document.getElementById('exemplo');
 
         //document.getElementById("nome").value="Luis";
         //alert(document.querySelector("input [name=nome]"));
@@ -27,7 +27,7 @@
     </script>
 </head>
 <body>
-    <div class="modal" id="exemplo">
+    <div class="modal alerta" id="exemplo">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -37,7 +37,7 @@
                     <p>O sistema está indisponível</p>
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-secondary" 
+                    <button class="btn btn-secondary" id="fechar"
                             data-bs-dismiss="modal">Fechar</button>
                     <button class="btn btn-danger">
                         Excluir conta
@@ -48,26 +48,56 @@
     </div>
 
     <div class="modal" id="cadastro">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5>Criar conta</h5>   
                 </div>
                 <form name="form1">
+                    <div class="modal-body">
+<!--
+                        <div class="mb-3">
+                            <p>Preencha esse formulário</p>
+                            <p>Verifique o seu e-mail depois</p>
+                        </div>
+-->
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">
+                                Nome
+                            </label> 
+                            <input type="text" id="nome" name="nome"
+                                    value=""
+                                    class="form-control"
+                                    placeholder="Nome" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">
+                                E-mail
+                            </label>
+                            <input type="email" id="email" name="email"
+                                class="form-control" />
+                        </div>
+                        <div clas="mb-3">
+                            <label for="senha" class="form-label">
+                                Senha
+                            </label>
+                            <input type="password" id="senha" name="senha"
+                                class="form-control" />
+                        </div>
 
-                <div class="modal-body">
-                    <input type="text"  name="nome"
-                            value="1"
-                            placeholder="Nome" />
-                </div>
+                        <div class="mb-3">
+                            <label for="senha2" class="form-label">
+                                Repetir senha
+                            </label>
+                            <input type="password" id="senha2" name="senha2"
+                                class="form-control" />
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <input type="submit" value="Gravar" />
+                        <input type="reset" value="Limpar" />
+                    </div>
                 </form>
-                <form name="form2">
-                    <input type="text"  name="nome"
-                            placeholder="Nome" />
-                </form>
-                <div class="modal-footer">
-                    <input type="submit" value="Gravar" />
-                </div>
                 
             </div>        
         </div>
@@ -94,10 +124,28 @@
     </div>
 </body>
     <script src="../js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>    
     <script>
         var campo = document.getElementById("ex1");
         campo.value="Luis";
 
-        document.form1.nome.value = "1";
+        //const myModal = document.getElementById('exemplo');
+        //alert( myModal.getAttribute('modal') );
+        
+        //const myInput = document.getElementById('fechar');
+        //myModal.tabIndex = 40;
+        //myModal.addEventListener('shown.bs.modal', () => {
+        //    myInput.focus();
+        //})
+        
+
+        $(document).ready(function() {
+            $('#exemplo').modal('show');
+        })
+
+        //alert(myModal.getAttribute('shown.bs.modal'));
+        //myModal.addEventListener('shown.bs.modal', () => {
+        //})
+        //document.form1.nome.value = "1";
     </script>
 </html>
